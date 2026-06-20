@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goose Hollow Suite — Cleaner Checklist</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f7f6f3; color: #1a1a1a; padding: 32px 16px 64px; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; }
+header p { font-size: 0.85rem; color: #888; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+.section { background: #fff; border-radius: 14px; padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); max-width: 680px; margin-left: auto; margin-right: auto; }
+.section-title { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #aaa; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #f0f0f0; }
+.task { margin-bottom: 24px; }
+.task:last-child { margin-bottom: 0; }
+.task-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.task-row input[type="checkbox"] { width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0; accent-color: #3d7c47; cursor: pointer; }
+.task-label { font-size: 1rem; font-weight: 500; line-height: 1.4; }
+.task-note { font-size: 0.8rem; color: #999; margin-left: 32px; margin-bottom: 10px; font-style: italic; }
+.task-img { display: block; width: 100%; max-width: 360px; margin-left: 32px; margin-top: 4px; border-radius: 10px; object-fit: cover; max-height: 280px; }
+.takehome-list { margin-left: 32px; margin-top: 4px; display: flex; flex-direction: column; gap: 8px; }
+.takehome-item { display: flex; align-items: center; gap: 10px; background: #fff8ec; border: 1px solid #ffe4a0; border-radius: 8px; padding: 10px 14px; }
+.takehome-item input[type="checkbox"] { width: 18px; height: 18px; accent-color: #c47f00; flex-shrink: 0; cursor: pointer; }
+.takehome-item label { font-size: 0.95rem; font-weight: 500; color: #6b4600; }
+.supplies-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 4px; }
+.supply-item { display: flex; align-items: center; gap: 10px; background: #f9f9f7; border-radius: 8px; padding: 10px 12px; }
+.supply-item input[type="checkbox"] { width: 18px; height: 18px; accent-color: #3d7c47; flex-shrink: 0; cursor: pointer; }
+.supply-item label { font-size: 0.9rem; font-weight: 500; color: #333; }
+footer { text-align: center; font-size: 0.75rem; color: #bbb; margin-top: 40px; max-width: 680px; margin-left: auto; margin-right: auto; }
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h1>Goose Hollow Suite</h1>
+  <p>1509 SW Market St, Portland, OR 97201</p>
+  <p>Cleaner Checklist</p>
+</header>
+
+<div class="section">
+  
+  <div class="task">
+    <div class="task-row"><span class="task-label">Smart front door combination: <strong>last 4 digits of your phone number</strong></span></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><span class="task-label">Combination lock on the closet door — no key needed.</span></div>
+    <img class="task-img" src="images/image_01.jpg" alt="Closet combination lock">
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">📦 Take Home to Wash</div>
+  <div class="task">
+    <div class="task-row"><span style="font-size:0.9rem;color:#888;">Pack up the following and wash at home:</span></div>
+    <div class="takehome-list">
+      <div class="takehome-item"><input type="checkbox" id="th-pc"><label for="th-pc">2 pillowcases (swapped out)</label></div>
+      <div class="takehome-item"><input type="checkbox" id="th-tw"><label for="th-tw">2 towels</label></div>
+      <div class="takehome-item"><input type="checkbox" id="th-ht"><label for="th-ht">2 hand towels</label></div>
+      <div class="takehome-item"><input type="checkbox" id="th-bs"><label for="th-bs">Bed sheet</label></div>
+      <div class="takehome-item"><input type="checkbox" id="th-dc"><label for="th-dc">Duvet cover (outer striped layer)</label></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Bathroom</div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="mirror"><label class="task-label" for="mirror">Wipe down mirror stains</label></div>
+    <img class="task-img" src="images/image_02.jpg" alt="Mirror stains">
+    <img class="task-img" src="images/image_03.jpg" alt="Wiping mirror">
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="soap"><label class="task-label" for="soap">Refill the hand soap</label></div>
+    <div class="task-note">Use the Mrs. Meyer's bulk jug under the sink</div>
+    <img class="task-img" src="images/image_04.jpg" alt="Refill soap">
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="counter-bath"><label class="task-label" for="counter-bath">Wipe off counter and sink area</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="shower"><label class="task-label" for="shower">Clean shower (hair in drain, corners, and stains)</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="toilet"><label class="task-label" for="toilet">Clean toilet (bowl, seat, tank, base)</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="floor-bath"><label class="task-label" for="floor-bath">Mop the floor</label></div>
+    <div class="task-note">For the diatomaceous stone mat: use a hand towel + water to wipe it down. Do not use chemicals.</div>
+    <img class="task-img" src="images/stone_mat.jpg" alt="Diatomaceous stone mat">
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="towels-replace"><label class="task-label" for="towels-replace">Replace 2 used hand towels with 2 fresh ones</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="trash-bath"><label class="task-label" for="trash-bath">Empty trash — replace with new bag</label></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Bedroom</div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="towels-swap"><label class="task-label" for="towels-swap">Swap 2 clean large towels</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="sheet"><label class="task-label" for="sheet">Swap clean bed sheet</label></div>
+    <img class="task-img" src="images/image_05.jpg" alt="Remove bed sheet">
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="duvet-outer"><label class="task-label" for="duvet-outer">Swap clean duvet cover</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="pillowcases"><label class="task-label" for="pillowcases">Swap clean pillowcases</label></div>
+    <img class="task-img" src="images/image_06.jpg" alt="Pillows">
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="plants"><label class="task-label" for="plants">Water plants (fill up the bird)</label></div>
+    <img class="task-img" src="images/water.jpg" alt="Feed the bird">
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="dishes"><label class="task-label" for="dishes">Wash dishes if dirty</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="surfaces"><label class="task-label" for="surfaces">Wipe off counter, desk, and all surfaces</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="floor-bed"><label class="task-label" for="floor-bed">Mop the floor</label></div>
+  </div>
+  <div class="task">
+    <div class="task-row"><input type="checkbox" id="trash-bed"><label class="task-label" for="trash-bed">Empty trash — replace with new bag<br><span style="font-weight:400;">⚠️ Recycling bin: remove contents only</span></label></div>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="section-title">Supplies to Restock</div>
+  <div class="supplies-grid">
+    <div class="supply-item"><input type="checkbox" id="s-soap"><label for="s-soap">Hand soap</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-shampoo"><label for="s-shampoo">Shampoo</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-conditioner"><label for="s-conditioner">Conditioner</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-bodywash"><label for="s-bodywash">Body wash</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-tp"><label for="s-tp">Toilet paper (2 rolls above the toilet)</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-pt"><label for="s-pt">Paper towels</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-bags"><label for="s-bags">Trash bags</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-kcups"><label for="s-kcups">K-cups &amp; tea bags</label></div>
+    <div class="supply-item"><input type="checkbox" id="s-ktowel"><label for="s-ktowel">1 extra kitchen towel (above microwave)</label></div>
+  </div>
+</div>
+
+<div class="section" style="max-width:680px;margin-left:auto;margin-right:auto;margin-bottom:28px;">
+  <div class="section-title">📸 The Space</div>
+  <img style="width:50%;border-radius:10px;margin-bottom:12px;display:block;" src="images/image_07.jpg" alt="Bedroom">
+  <img style="width:50%;border-radius:10px;margin-bottom:12px;display:block;" src="images/image_08.jpg" alt="Room details">
+  <img style="width:50%;border-radius:10px;display:block;" src="images/image_09.jpg" alt="Bathroom shelf">
+</div>
+
+<footer>Goose Hollow Suite · 1509 SW Market St, Portland, OR 97201 · Print or share as needed</footer>
+
+</body>
+</html>

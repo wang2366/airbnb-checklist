@@ -1,0 +1,6 @@
+.DS_Store
+images_backup/
+images/*.png
+images/stone_mat.jpeg
+images/water.jpeg
+cleaner_checklist.pdf
